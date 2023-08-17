@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        var nome = window.prompt('Qual o seu nome?')
+        document.write(` Olá ${nome}, seu nome tem ${nome.length} letras. <br/>`)
+        document.write(`seu nome em letras maiúsculas é ${nome.toUpperCase()} <br/>`)
+        document.write(`o seu nome em minúsculas é ${nome.toLowerCase()}`)
+
+        var n1 = Number(window.prompt('digite seu salário'))
+        var salario = n1.toLocaleString('pt-BR', {style:'currency', currency:'BRL'}) 
+        //adiciona e formata os caracteres regionais brasileiros aos valores n1
+
+        document.write(`aqui está o seu salário representado no Brasil: ${salario}`)
+        //escreve na tela o valos já formatado
+
+
+    </script>
+</body>
+</html>
