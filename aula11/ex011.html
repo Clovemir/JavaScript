@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Países</title>
+</head>
+<body>
+    <h1>Nos informe seu País:</h1>
+    <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div class="msg"></div>
+
+    <script>
+        function verificar(){
+            let txt1 = document.querySelector('#txtp').value.toUpperCase();
+            let msg1 = document.querySelector('.msg')
+            if (txt1 == 'BRASIL') {
+                msg1.innerHTML = `Você mora no ${txt1}, portanto, é brasileiro`
+            } else {
+                msg1.innerHTML = `Você mora no país: ${txt1}, portanto, é Estrangeiro.`
+            }
+        }
+    </script>
+
+</body>
+</html>
